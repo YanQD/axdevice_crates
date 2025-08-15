@@ -68,7 +68,7 @@ pub fn map_device_of_type<T: BaseDeviceOps<R>, R: DeviceAddrRange, U, F: FnOnce(
     any_arc.downcast_ref::<T>().map(f)
 }
 
-/// trait aliases are limited yet: https://github.com/rust-lang/rfcs/pull/3437
+// trait aliases are limited yet: https://github.com/rust-lang/rfcs/pull/3437
 /// [`BaseMmioDeviceOps`] is the trait that all emulated MMIO devices must implement.
 /// It is a trait alias of [`BaseDeviceOps`] with [`GuestPhysAddrRange`] as the address range.
 pub trait BaseMmioDeviceOps = BaseDeviceOps<GuestPhysAddrRange>;

@@ -5,7 +5,7 @@ version = "0.1.0"
 description = "Basic traits and structures for emulated devices in ArceOS hypervisor."
 authors = ["Hui Xiao <1127751018@qq.com>"]
 license = "GPL-3.0-or-later OR Apache-2.0 OR MulanPSL-2.0" # MulanPubL2 is not included in SPDX
-categories = ["hypervisor", "no-std"]
+categories = ["virtualization", "no-std"]
 homepage = "https://github.com/arceos-hypervisor/axvisor" 
 
 [dependencies]
